@@ -1,11 +1,61 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<html>
+    <head>
+        <title>First Website</title>
+    </head>
+    <body>
+        <h1>Welcome to my Webpage</h1>
+
+        <form id="loginInfo">
+            <label>Username: </label>
+            <input type="text" id="username" placeholder="Enter your username">
+            <br>
+            <label>Password: </label>
+            <input type="password" placeholder="Enter your password">
+            <br>
+            <input type="submit">
+        </form>
+        <p id="output"></p>
+
+        <br>
+
+        <h2>My content Goes here</h2>
+        <p>This is a paragraph</p>
+        <img src="" alt="this is an image">
+        <ol>
+            <li>mango</li>
+            <li>pawpaw</li>
+            <li>Apple</li>
+        </ol>
+        <ul>
+            <li> Sokoto</li>
+            <li>Jos</li>
+            <li>Enugu</li>
+        </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script>
+            document.getElementById('loginInfo').addEventListener('submit',
+                function(event) {
+                    event.preventDefault();
+                    const unameInput = document.getElementById('username');
+                    const result = document.getElementById('output');
+
+                    const uname = unameInput.value;
+                    alert("Congratulations you have successfully logged in "+ uname)
+                    result.textContent = "Welcome, "+ uname;
+                }
+            )
+        </script>
+    </body>
 </html>
