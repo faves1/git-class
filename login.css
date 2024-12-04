@@ -1,0 +1,66 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 100vh;
+ background-image: url('download.jpg');
+ background-size: cover;
+}
+.login-form{
+    background-image: url('download.jpg');
+    background-size: cover;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    opacity: 1; /* Fully visible by default */
+    font-size: 16px;
+    border: 1px solid #ccc;
+}
+
+.login-form h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.login-form input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 0cap solid rgb(22, 6, 110);
+    border-radius: 4px;
+    background-color: rgba(33, 110, 129, 0.3);
+    color: black;
+    font-weight: bolder;
+    font-size: large;
+    text-align: center;
+}
+
+input::-webkit-input-placeholder { /* Chrome, Safari, Edge */
+    color: rgb(2, 1, 19);
+    text-align: center;
+    font-weight: bold;
+}
+
+.login-form button {
+    width: 25%;
+    padding: 10px;
+    background-color: rgb(34, 59, 170);
+    color: aliceblue;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.login-form button:hover {
+    background-color: rgba(5, 5, 170, 0.9);
+    box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+.error-message {
+    color: red;
+    font-size: 10px;
+    text-align: center;
+}

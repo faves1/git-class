@@ -14,6 +14,6 @@ function validateLogin() {
         errormessage.textContent = ''; //clear my error messages
         //reflect or continue to another page
     }else {
-        errormessage.textContent = 'Invalid users name or password.';
+        errormessage.textContent = 'Invalid username or password.';
     }
 }
